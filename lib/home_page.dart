@@ -1,15 +1,28 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
 
+  final List _categories = [
+    "Category 1",
+    "Category 2",
+    "Category 3",
+    "Category 4",
+    "Category 5",
+    "Category 6",
+    "Category 7",
+    "Category 8",
+    "Category 9",
+    "Category 10",
+    "Category 11",
+  ];
+  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: ListView.builder(
-          itemCount: 10,
+          itemCount: _categories.length ,
           itemBuilder: (context , index){
             return Padding(
               padding: const EdgeInsets.all(5.0),
@@ -17,7 +30,7 @@ class HomePage extends StatelessWidget {
                 height: 70,
                 color: Colors.deepPurple,
                 child:  Text(
-                  index.toString(),
+                  _categories[index],
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -28,3 +41,4 @@ class HomePage extends StatelessWidget {
     );
   }
 }
+
