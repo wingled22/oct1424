@@ -5,6 +5,39 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Placeholder();
+    return MaterialApp(
+      home: Scaffold(
+        body: GridView.count(
+          crossAxisCount: 4,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: Container(color: Colors.blue,),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: Container(color: Colors.blue,),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: Container(color: Colors.blue,),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: Container(color: Colors.blue,),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: Container(color: Colors.blue,),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: Container(color: Colors.blue,),
+            ),
+            
+          ],
+        )
+      ),
+    );
   }
 }
